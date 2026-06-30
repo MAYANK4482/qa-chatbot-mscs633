@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Databases generated at runtime
+*.sqlite3
+db.sqlite3
+database.sqlite3
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+*.swp
