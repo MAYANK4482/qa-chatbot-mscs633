@@ -108,57 +108,6 @@ bot: Goodbye!
 
 ---
 
-## Project Layout
-
-```
-qa-chatbot-mscs633/
-├── bot_engine.py                 # shared ChatterBot factory + chat loop (the core)
-├── chatbot.py                    # standalone terminal entry point
-├── manage.py                     # Django entry point
-├── requirements.txt              # pinned dependencies (manifest file)
-├── README.md                     # this file
-├── .gitignore
-├── Assignment_Writeup.md         # detailed assignment writeup
-├── qa_chatbot/                   # Django project configuration
-│   ├── __init__.py
-│   ├── settings.py               # registers chatterbot.ext.django_chatterbot
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── asgi.py
-├── assistant/                    # Django app
-│   ├── __init__.py
-│   ├── apps.py
-│   └── management/
-│       └── commands/
-│           └── chat.py           # `python manage.py chat`
-└── screenshots/                  # terminal screenshot for the Word deliverable
-    └── terminal_output.png
-```
-
----
-
-## Publishing to GitHub
-
-```bash
-git init
-git add .
-git commit -m "MSCS-633 Hands-On Assignment 3: Q&A chatbot (Python + Django + ChatterBot)"
-git branch -M main
-gh repo create qa-chatbot-mscs633 --public \
-    --description "Terminal Q&A chatbot built with Python, Django, and ChatterBot (MSCS-633, Summer 2026)" \
-    --source=. --remote=origin --push
-```
-
-(Without the GitHub CLI `gh`, create the repo on github.com, then `git remote add origin <url> && git push -u origin main`.) Paste the resulting URL into the Brightspace submission box.
-
----
-
-## License
-
-MIT — free to reuse, fork, and remix.
-
----
-
 ## Author
 
 **Mayank Vadaliya** — doctoral researcher in Information Technology, University of the Cumberlands
